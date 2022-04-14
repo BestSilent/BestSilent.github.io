@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Triangle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<!-- 
+<script>
+if (typeof window.ethereum === "undefined") {
+        //没安装MetaMask钱包进行弹框提示
+        alert("请安装MetaMask")
+        // Message.warning("请安装MetaMask")
+    } else {
+        //如果用户安装了MetaMask，你可以要求他们授权应用登录并获取其账号
+        ethereum.enable()
+            .catch(function(reason) {
+                //如果用户拒绝了登录请求
+                if (reason === "User rejected provider access") {
+                    // 用户拒绝登录后执行语句；
+                } else {
+                    // 本不该执行到这里，但是真到这里了，说明发生了意外
+                    // Message.warning("There was a problem signing you in");
+                    alert("There was a problem signing you in")
+                }
+            }).then(function(accounts) {
+                // 判断是否连接以太
+                if (ethereum.networkVersion !== desiredNetwork) {}
+                let currentProvider = web3.currentProvider;
+                web3.setProvider(currentProvider);
+                //如果用户同意了登录请求，你就可以拿到用户的账号
+                web3.eth.defaultAccount = accounts[0];
+
+                myContract = new web3.eth.Contract(ABI, metaMaskAddress);
+                //这里返回用户钱包地址
+                callback(accounts[0]);
+            });
+    }
+</script> -->
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href="https://twitter.com/silentbest3"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://opensea.io/collection/spiritmoney"><i class="fa"><image class="opensea" src="./images/ico/opensea.png"/></i></a></li>
+                            <li><a href=""><i class="fa"><image class="wallet" src="./images/ico/wallet.png"/></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="pray.html">Pray</a>
+                        </li>                    
+                        <li class="dropdown"><a href="prayerpool.html">Prayer Pool</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>SpiritMoney</h1>
+                        
+                        <p>The NTF collection composed of 6888 unique spirit money, low-carbon environmental protection sacrifice, give your deceased relatives a spirit money!</p>
+                        <a href="https://opensea.io/collection/spiritmoney" class="btn btn-common">TO BUY</a>
+                    </div>
+                    <img src="images/home/bk.png" class="slider-hill" alt="slider image">
+                    <img src="images/home/cs.png" class="slider-house" alt="slider image">
+                    <!-- <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image"> -->
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/ntf/Environmental-Friendly.png" alt="">
+                        </div>
+                        <h2>Environmental Friendly</h2>
+                        <p>It does not burn, does not produce carbon dioxide, not only protects the environment, but also expresses your thoughts or wishes.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/ntf/Eternal-Prayer.png" alt="">
+                        </div>
+                        <h2>Eternal Prayer</h2>
+                        <p>It will always exist on the blockchain and will not be lost, so that your thoughts or wishes can always be seen, and we will use 20% of the profit to realize these wishes as much as possible.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/ntf/Deflation-Token.png" alt="">
+                        </div>
+                        <h2>Deflation Token</h2>
+                        <p>This NTF collection, every time a wish or prayer is made, will be thrown into the burning pool and will never be recovered, so the holding has a certain room for appreciation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">To realize your wish</h1>
+                            <!-- <p>A responsive, retina-ready &amp; wide multipurpose template.</p> -->
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="pray.html" class="btn btn-common">TO PRAY</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/ntf/1.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Unique And Meaningful</h2>
+                        <P>You can use this token to commemorate your relatives in heaven, you can use this token to make your wishes, and you can use this token to express your needs.</P>
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Wish Fulfillment</h2>
+                        <P>We'll give 20% of this token's revenue to fulfill some wishes that seem likely to be fulfilled. 
+                            For example: I want to get a Tesla on my 20th birthday, address: xxx·xxx·xxx 
+                            or I want to give my wife a diamond ring on every wedding anniversary, address: xxx·xxx·xxx.</P>
+                    </div>
+                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/ntf/2.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/ntf/3.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Caring And Developing Team</h2>
+                        <P>Our team is made up of a group of caring people, and we have been developing and growing. We look forward to your support to make our business grow bigger and bigger and realize the wishes of more participants.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--/#features-->
+
+    <!-- <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
+                        <h1 class="title">Happy Clients</h1>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
+                    </div>
+                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> -->
+    <!--/#clients-->
+<!--/#blog-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div style="height: 150px;" class="col-sm-12 text-center">
+                <p></p>
+            </div>
+            
+            <div class="col-sm-12 text-center">
+                <div class="copyright-text text-center">
+                    <p>&copy; Jurassic Network 2022 All Rights Reserved.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+    <script type="text/javascript" src ="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="js/wallet.js"></script>
+</body>
+</html>
